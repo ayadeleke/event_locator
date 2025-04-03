@@ -47,5 +47,6 @@
     "unauthorized_no_token": "Nicht autorisiert: Kein Token angegeben.",
     "unauthorized_token_expired": "Nicht autorisiert: Token abgelaufen.",
     "unauthorized_invalid_token": "Nicht autorisiert: Ungültiger Token.",
-    "forbidden_no_permission": "Verboten: Keine Berechtigung zum Zugriff auf dieses Resource."
+    "forbidden_no_permission": "Verboten: Keine Berechtigung zum Zugriff auf dieses Resource.",
+    "events_fetched_successfully": "Veranstaltungen erfolgreich abgerufen."
 }

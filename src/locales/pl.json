@@ -47,5 +47,6 @@
     "unauthorized_no_token": "Niezatwierdzone: Nie podano tokena.",
     "unauthorized_token_expired": "Niezatwierdzone: Token wygasł.",
     "unauthorized_invalid_token": "Niezatwierdzone: Nieprawidłowy token.",
-    "forbidden_no_permission": "Zabronione: Nie masz uprawnień do dostępu do tego zasobu."
+    "forbidden_no_permission": "Zabronione: Nie masz uprawnień do dostępu do tego zasobu.",
+    "events_fetched_successfully": "Wydarzenia pobrane pomyślnie."
 }

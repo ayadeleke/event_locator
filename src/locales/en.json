@@ -47,5 +47,6 @@
     "unauthorized_no_token": "Unauthorized: No token provided",
     "unauthorized_token_expired": "Unauthorized: Token expired",
     "unauthorized_invalid_token": "Unauthorized: Invalid token",
-    "forbidden_no_permission": "Forbidden: You do not have permission to access this resource"
+    "forbidden_no_permission": "Forbidden: You do not have permission to access this resource",
+    "events_fetched_successfully": "Events fetched successfully."
 }

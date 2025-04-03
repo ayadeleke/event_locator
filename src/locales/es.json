@@ -47,5 +47,6 @@
   "unauthorized_no_token": "No autorizado: No se proporcionó un token.",
   "unauthorized_token_expired": "No autorizado: El token ha expirado.",
   "unauthorized_invalid_token": "No autorizado: Token inválido.",
-  "forbidden_no_permission": "Prohibido: No tiene permiso para acceder a este recurso."
+  "forbidden_no_permission": "Prohibido: No tiene permiso para acceder a este recurso.",
+  "events_fetched_successfully": "Eventos obtenidos con éxito."
 }

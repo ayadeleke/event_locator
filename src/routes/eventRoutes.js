@@ -158,16 +158,22 @@ router.get('/:id', eventController.getEventById);
  *                 type: string
  *               description:
  *                 type: string
- *               date:
+ *               category:
+ *                 type: string
+ *               event_time:
  *                 type: string
  *                 format: date-time
- *               location:
+ *               locationAddress:
  *                 type: string
+ *               created_by:
+ *                 type: integer
  *             example:
  *               title: "Concert"
  *               description: "Live concert by famous band."
- *               date: "2025-05-20T19:00:00Z"
- *               location: "Los Angeles, CA"
+ *               category: "music"
+ *               event_time: "2025-05-20T19:00:00Z"
+ *               locationAddress: "Los Angeles, CA"
+ *               created_by: 1
  *     responses:
  *       201:
  *         description: Event created successfully

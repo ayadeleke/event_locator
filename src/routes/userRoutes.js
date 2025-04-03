@@ -3,7 +3,7 @@ const router = express.Router();
 const User = require('../models/user');
 const { register, login } = require('../controllers/authController');
 const { authenticate, authorize } = require('../middlewares/authMiddleware');
-
+const i18next = require('i18next');
 
 /**
  * @swagger
@@ -136,7 +136,6 @@ router.get('/', authenticate, authorize(['admin']), async (req, res) => {
     }
 });
 
-
 /**
  * @swagger
  * /users/{id}:
@@ -171,8 +170,6 @@ router.get('/:id', async (req, res) => {
         res.status(500).json({ message: req.t('server_error') }); // Translated error message
     }
 });
-module.exports = router;
-
 
 /**
  * @swagger
@@ -227,7 +224,10 @@ router.put('/:id', authenticate, authorize(['admin']), async (req, res) => {
             return res.status(404).json({ message: req.t('user_not_found') });
         }
         await user.update(req.body);
-        res.json(user);
+        res.json({
+            message: req.t('user_updated_successfully'),  // Translated success message
+            user: user
+        });
     } catch (err) {
         console.error("Error updating user:", err);
         res.status(500).json({ message: req.t('server_error') });
@@ -268,7 +268,7 @@ router.delete('/:id', authenticate, authorize(['admin']), async (req, res) => {
         }
         console.log(`Deleting user with ID: ${user.id}`);
         await user.destroy();
-        res.status(200).json({ message: req.t('user_deleted_successfully') });
+        res.status(200).json({ message: req.t('user_deleted_successfully') });  // Translated success message
     } catch (err) {
         console.error("Error deleting user:", err);
         res.status(500).json({ message: req.t('server_error') });

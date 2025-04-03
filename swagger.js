@@ -9,7 +9,7 @@ const swaggerOptions = {
     definition: {
         openapi: '3.0.0',
         info: {
-            title: 'Event Locator API',
+            title: 'Event Locator APP',
             version: '1.0.1',
             description: 'API documentation for the Event Locator application',
             contact: {
